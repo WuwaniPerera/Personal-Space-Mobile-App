@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HealthTracker">
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="433dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="-180dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/backarrow"
+        android:text="What Do You Want?"
+        android:textAlignment="center"
+        android:textColor="#c50763"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        ></TextView>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/cardbackground"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/calcimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bmi"></ImageView>
+
+        <android.widget.Button
+            android:id="@+id/bmibutton"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/labelbackground"
+            android:text="BMI Calculator"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></android.widget.Button>
+
+        <ImageView
+            android:id="@+id/reportimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/calcimage"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/report"></ImageView>
+
+        <android.widget.Button
+            android:id="@+id/reportbutton"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/bmibutton"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/labelbackground"
+            android:text="Sleep Tracker"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></android.widget.Button>
+
+
+        <ImageView
+            android:id="@+id/detailsimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/reportimage"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/details"></ImageView>
+
+        <android.widget.Button
+            android:id="@+id/detailsbutton"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/reportbutton"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/labelbackground"
+            android:text="Your Details"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></android.widget.Button>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

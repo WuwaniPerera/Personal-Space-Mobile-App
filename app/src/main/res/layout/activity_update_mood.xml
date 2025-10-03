@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateMoodActivity">
+
+    <TextView
+        android:id="@+id/txt_update_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="103dp"
+        android:text="@string/txt_update_mood"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="35dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/txtUpdateDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_update_mood" />
+
+    <TextView
+        android:id="@+id/txtUpdateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="119dp"
+        android:text="@string/txt_select_date_here"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_update_mood" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGrpMoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateDate">
+
+        <RadioButton
+            android:id="@+id/radioBTn_Wonderful"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/wonderfulr"
+            android:text="        Wonderful"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Happy"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/happyr"
+            android:text="        Happy"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Neutral"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/neutralr"
+            android:text="        Neutral"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Sad"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/unhappyr"
+            android:text="        Sad"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Awful"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/awfulr"
+            android:text="        Awful"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtUpdateMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/edtEnterMood"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_ash"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpMoods" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/btnUpdate"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdateMood" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/entries"
+        android:icon="@drawable/ic_list"
+        android:title="@string/btmNav_entries" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/btmNav_home" />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add"
+        android:title="@string/btmNav_add" />
+
+    <item
+        android:id="@+id/stats"
+        android:icon="@drawable/ic_bar_chart"
+        android:title="@string/btmNav_stats" />
+</menu>

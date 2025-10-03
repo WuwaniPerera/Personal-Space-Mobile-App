@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">MADColored</string>
+    <string name="titleLogin">Login</string>
+    <string name="hntEmail">E-mail</string>
+    <string name="hntPassword">Password</string>
+    <string name="hntConfirmPassword">Confirm Password</string>
+    <string name="forgot_pass_word">Forgot Password?</string>
+    <string name="btnLogin">Login</string>
+    <string name="sign_in_with_google">Sign In With Google</string>
+    <string name="dont_have_an_account">Sign Up</string>
+    <string name="dont_have_an_account_txt">Don\'t have an account?</string>
+    <string name="titleSignup">Sign Up</string>
+    <string name="hntPhone">Mobile number</string>
+    <string name="checkBox_Agree">I have read and agree to privacy policy, terms and conditions</string>
+    <string name="BtnSignup">Sign Up</string>
+    <string name="already_have_an_account">Login</string>
+    <string name="already_have_an_account_txt">Already have an account?</string>
+    <string name="txtDashboard">Dashboard</string>
+    <string name="txtDiary">Diary</string>
+    <string name="txtMoods">Moods</string>
+    <string name="txtGoals">Goals</string>
+    <string name="txtHealth_tracker">Health Tracker</string>
+    <string name="txt_update_mood">Update Mood</string>
+    <string name="radioBtn_wonderful">Wonderful</string>
+    <string name="radioBtn_happy">Happy</string>
+    <string name="radioBtn_neutral">Sad</string>
+    <string name="radioBtn_sad">Neutral</string>
+    <string name="radioBtn_awful">Awful</string>
+    <string name="txt_add_your_mood">Add your mood</string>
+    <string name="txt_select_date_here">Select Date here</string>
+    <string name="txt_mood_entries">Mood Entries</string>
+    <string name="txt_mood_analysis">Mood Analysis</string>
+    <string name="txt_mood_count">Monthly Mood Count</string>
+    <string name="btmNav_entries">Entries</string>
+    <string name="btmNav_home">Home</string>
+    <string name="btmNav_add">Add</string>
+    <string name="btmNav_stats">Stats</string>
+    <string name="popup_menu_edit">Edit</string>
+    <string name="popup_menu_delete">Delete</string>
+    <string name="txt_welcome">Welcome!</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="btn_reset">Reset</string>
+    <string name="hnt_new_password">New password</string>
+    <string name="hnt_confirm_new_password">Confirm new password</string>
+    <string name="txt_otp_verification">OTP Verification</string>
+    <string name="txt_enter_otp">Enter the OTP sent to your mobile number</string>
+    <string name="btnVerify">Verify</string>
+    <string name="txt_resend_otp">Did\'t get the OTP? Resend</string>
+    <string name="hnt_otp1">3</string>
+    <string name="hnt_otp2">8</string>
+    <string name="hnt_otp3">4</string>
+    <string name="hnt_otp4">2</string>
+
+    <string name="hntName">Name</string>
+    <string name="btnLogout">Log Out</string>
+    <string name="btnAdd">Add</string>
+    <string name="edtEnterMood">Enter Your Mood</string>
+    <string name="btnUpdate">Update</string>
+    
+    
+    //diary
+    <string name="save_btn">save</string>
+    <string name="title">Title</string>
+    <string name="content">Write more here...</string>
+    <string name="addPic">Attach an image..</string>
+    <string name="calendar_btn">calendar</string>
+    <string name="close_btn">close</string>
+    <string name="image_btn">image</string>
+    <string name="date">Date</string>
+    <string name="back_btn">back</string>
+    <string name="more_btn">more</string>
+    <string name="update_btn">Update</string>
+    <string name="scroll">scroll</string>
+    <string name="diaryName">Diary</string>
+    <string name="content1">Today was a little better. I texted Sarah last night asking if she wanted to have lunch with me today, just the two of us, and she said sure.</string>
+    <string name="date1">11/08/2022</string>
+    <string name="content2">Sorry I didn’t get to write last night! It was such a busy day, and I was too tired to write anything...</string>
+    <string name="date2">25/09/2022</string>
+    <string name="topic1">Mother\'s birthday</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="speaker">speaker</string>
+    <string name="new_btn">new_btn</string>
+
+
+</resources>
+
+
+

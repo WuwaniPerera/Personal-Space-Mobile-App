@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:id="@+id/centerhorizontaline" />
+
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:layout_centerHorizontal="true"
+     android:id="@+id/centerverticalline" />
+
+
+ <ImageView
+     android:id="@+id/backarrow"
+     android:layout_width="433dp"
+     android:layout_height="51dp"
+     android:layout_marginLeft="-170dp"
+     android:layout_marginTop="0dp"
+     android:src="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+
+ <RelativeLayout
+     android:layout_width="340dp"
+     android:layout_height="60dp"
+     android:layout_below="@+id/backarrow"
+     android:layout_marginLeft="35dp"
+     android:layout_marginTop="0dp"
+     android:layout_marginRight="25dp"
+
+     android:background="@drawable/buttonbackground">
+
+  <TextView
+      android:id="@+id/currentDate"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="30dp"
+
+      android:layout_marginTop="15dp"
+      android:text="Date"
+      android:textColor="#c50763"
+      android:textSize="25dp"
+      android:textStyle="bold"></TextView>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="15dp"
+
+
+      >
+
+
+   <TextView
+       android:id="@+id/editselectdate"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="Select the date"
+       android:textColor="#FFFFFF"
+
+
+       android:textSize="25dp"
+       android:textStyle="bold"></TextView>
+
+
+  </RelativeLayout>
+
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/heightlayout"
+     android:layout_width="340dp"
+     android:layout_height="150dp"
+     android:layout_above="@id/centerhorizontaline"
+     android:layout_centerHorizontal="true"
+     android:layout_marginLeft="25dp"
+     android:layout_marginRight="25dp"
+     android:layout_marginBottom="50dp"
+     android:background="@drawable/cardbackground">
+
+
+  <TextView
+      android:id="@+id/currentsheight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:text="Height"
+      android:textAlignment="center"
+      android:textColor="#1d1128"
+      android:textSize="20sp"
+      android:textStyle="bold"></TextView>
+
+<!--  <TextView-->
+<!--      android:id="@+id/currentheight"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentBottom="true"-->
+
+<!--      android:layout_centerInParent="true"-->
+<!--      android:layout_marginBottom="50dp"-->
+<!--      android:text="170"-->
+<!--      android:textColor="#1d1128"-->
+<!--      android:textSize="40sp"-->
+<!--      android:textStyle="bold"></TextView>-->
+
+  <EditText
+      android:id="@+id/currentheight"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerInParent="true"
+      android:layout_marginBottom="50dp"
+      android:text="170"
+      android:textColor="#1d1128"
+      android:textSize="40sp"
+      android:textStyle="bold">
+
+  </EditText>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="20dp"
+      android:layout_toEndOf="@+id/currentheight"
+      android:text="cm"
+      android:textColor="#1d1128"
+      android:textSize="20sp"
+      android:textStyle="bold"></TextView>
+
+
+<!--  <SeekBar-->
+<!--      android:id="@+id/seekbarforheight"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_marginLeft="10dp"-->
+<!--      android:layout_marginRight="10dp"-->
+<!--      android:layout_marginBottom="16dp"-->
+<!--      android:progressTint="#FF4c4c"></SeekBar>-->
+
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/weight"
+     android:layout_width="150dp"
+     android:layout_height="150dp"
+     android:layout_below="@+id/heightlayout"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="-10dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="10dp"
+     android:layout_toStartOf="@id/centerverticalline"
+     android:background="@drawable/cardbackground">
+
+
+  <TextView
+      android:id="@+id/textweight"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="15dp"
+      android:text="Weight"
+      android:textAlignment="center"
+      android:textColor="#c50763"
+      android:textSize="25sp"
+      android:textStyle="bold"
+
+
+      ></TextView>
+
+<!--  <TextView-->
+<!--      android:id="@+id/currentweight"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+
+<!--      android:layout_centerInParent="true"-->
+<!--      android:text="55"-->
+<!--      android:textAlignment="center"-->
+<!--      android:textColor="#1d1128"-->
+<!--      android:textSize="30sp"-->
+<!--      android:textStyle="bold"></TextView>-->
+
+  <EditText
+      android:id="@+id/currentweight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="55"
+      android:textAlignment="center"
+      android:textColor="#1d1128"
+      android:textSize="30sp"
+      android:textStyle="bold">
+
+  </EditText>
+
+<!--  <RelativeLayout-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_marginStart="20dp"-->
+<!--      android:layout_marginBottom="10dp"-->
+<!--      android:background="@drawable/plusminus">-->
+
+<!--   <ImageView-->
+<!--       android:id="@+id/minus"-->
+<!--       android:layout_width="30dp"-->
+<!--       android:layout_height="30dp"-->
+<!--       android:src="@drawable/minus"></ImageView>-->
+
+
+<!--  </RelativeLayout>-->
+
+<!--  <RelativeLayout-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentEnd="true"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_marginEnd="20dp"-->
+<!--      android:layout_marginBottom="10dp"-->
+<!--      android:background="@drawable/plusminus">-->
+
+<!--   <ImageView-->
+<!--       android:id="@+id/incrementweight"-->
+<!--       android:layout_width="30dp"-->
+<!--       android:layout_height="30dp"-->
+<!--       android:src="@drawable/add"></ImageView>-->
+
+
+<!--  </RelativeLayout>-->
+
+
+ </RelativeLayout>
+
+
+ <RelativeLayout
+     android:id="@+id/age"
+     android:layout_width="150dp"
+     android:layout_height="150dp"
+     android:layout_below="@+id/heightlayout"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="-10dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="10dp"
+     android:layout_toEndOf="@id/centerverticalline"
+     android:background="@drawable/cardbackground">
+
+
+  <TextView
+      android:id="@+id/textage"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="15dp"
+      android:text="Age"
+      android:textAlignment="center"
+      android:textColor="#c50763"
+      android:textSize="25sp"
+      android:textStyle="bold"
+
+
+      ></TextView>
+
+<!--  <TextView-->
+<!--      android:id="@+id/currentage"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+
+<!--      android:layout_centerInParent="true"-->
+<!--      android:text="21"-->
+<!--      android:textAlignment="center"-->
+<!--      android:textColor="#1d1128"-->
+<!--      android:textSize="30sp"-->
+<!--      android:textStyle="bold"></TextView>-->
+
+  <EditText
+      android:id="@+id/currentage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="21"
+      android:textAlignment="center"
+      android:textColor="#1d1128"
+      android:textSize="30sp"
+      android:textStyle="bold"></EditText>
+
+<!--  <RelativeLayout-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_marginStart="20dp"-->
+<!--      android:layout_marginBottom="10dp"-->
+<!--      android:background="@drawable/plusminus">-->
+
+<!--   <ImageView-->
+<!--       android:id="@+id/incrementage"-->
+<!--       android:layout_width="30dp"-->
+<!--       android:layout_height="30dp"-->
+<!--       android:src="@drawable/add"></ImageView>-->
+
+
+<!--  </RelativeLayout>-->
+
+<!--  <RelativeLayout-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentEnd="true"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_marginEnd="20dp"-->
+<!--      android:layout_marginBottom="10dp"-->
+<!--      android:background="@drawable/plusminus">-->
+
+<!--   <ImageView-->
+<!--       android:id="@+id/decrementage"-->
+<!--       android:layout_width="30dp"-->
+<!--       android:layout_height="30dp"-->
+<!--       android:src="@drawable/minus"></ImageView>-->
+
+
+<!--  </RelativeLayout>-->
+
+
+ </RelativeLayout>
+
+
+ <android.widget.Button
+     android:id="@+id/calculatebmi"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="100dp"
+     android:background="@drawable/buttonbackground"
+     android:text="Calculate Your BMI"
+     android:textColor="#da5f07"
+     android:textSize="20sp"
+     android:textStyle="bold"></android.widget.Button>
+
+ <android.widget.Button
+     android:id="@+id/resetdetails"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="50dp"
+     android:background="@drawable/buttonbackground"
+     android:text="Reset"
+     android:textColor="#da5f07"
+     android:textSize="20sp"
+     android:textStyle="bold"></android.widget.Button>
+
+
+ <android.widget.Button
+     android:id="@+id/savebutton"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="0dp"
+     android:background="@drawable/buttonbackground"
+     android:text="Save"
+     android:textColor="#da5f07"
+     android:textSize="20sp"
+     android:textStyle="bold"></android.widget.Button>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

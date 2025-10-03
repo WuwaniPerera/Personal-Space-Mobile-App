@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/titleSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="@string/titleSignup"
+        android:textColor="@color/theme_pink"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_deco1.1"
+        android:layout_width="194dp"
+        android:layout_height="202dp"
+        android:rotation="-13"
+        app:layout_constraintBottom_toBottomOf="@+id/edtEmailSignup"
+        app:layout_constraintStart_toEndOf="@+id/titleSignUp"
+        app:srcCompat="@drawable/deco1" />
+
+    <ImageView
+        android:id="@+id/img_deco1.2"
+        android:layout_width="201dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="11dp"
+        android:rotation="168"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/BtnSignup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSignup"
+        app:srcCompat="@drawable/deco1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAgree"
+        android:layout_width="319dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="61dp"
+        android:text="@string/checkBox_Agree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordSignup" />
+
+    <Button
+        android:id="@+id/BtnSignup"
+        android:layout_width="315dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/BtnSignup"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/theme_pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSignup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/already_have_an_account_txt"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSignup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edtEmailSignup"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/hntEmail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/hint_ash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSignUp" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/hntPhone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hint_ash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameSignup" />
+
+    <EditText
+        android:id="@+id/edtPasswordSignup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="@string/hntPassword"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hint_ash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+    <EditText
+        android:id="@+id/edtNameSignup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/hntName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailSignup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

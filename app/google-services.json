@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "330356595323",
+    "firebase_url": "https://mad3-c0282-default-rtdb.firebaseio.com",
+    "project_id": "mad3-c0282",
+    "storage_bucket": "mad3-c0282.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330356595323:android:3ee10a3d40b65f0560e0de",
+        "android_client_info": {
+          "package_name": "com.example.madcolored"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330356595323-utjeuo6offs9s0s34q3qr4345k3cb4h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDepHSxxavL3cICHzRj2pntfQYOKFDbJ4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330356595323-utjeuo6offs9s0s34q3qr4345k3cb4h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

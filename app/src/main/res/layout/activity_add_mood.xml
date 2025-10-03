@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMood">
+
+
+    <TextView
+        android:id="@+id/txtAddMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/txt_add_your_mood"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_select_date_here"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddMood" />
+
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddMood" />
+
+    <RadioGroup
+        android:id="@+id/radioGrpMoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate">
+
+        <RadioButton
+            android:id="@+id/radioBTn_Wonderful"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/wonderfulr"
+            android:text="        Wonderful"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Happy"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/happyr"
+            android:text="        Happy"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Neutral"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/neutralr"
+            android:text="        Neutral"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Sad"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/unhappyr"
+            android:text="        Sad"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBTn_Awful"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:button="@color/transparent"
+            android:drawableStart="@drawable/awfulr"
+            android:text="        Awful"
+            android:textColor="@color/moods_radiobtn_selector"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtEnterMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/edtEnterMood"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_ash"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpMoods" />
+
+    <Button
+        android:id="@+id/btnAddMood"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/btnAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpMoods" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="393dp"
+        android:layout_height="62dp"
+        android:background="@color/theme_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgEntries"
+            android:layout_width="49dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_list" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/btmNav_entries"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgEntries" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="33dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@+id/imgEntries"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@+id/imgHome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/imgStats"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@+id/imgAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bar_chart" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:text="@string/btmNav_home"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imgHome" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/btmNav_add"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:text="@string/btmNav_stats"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imgAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imgStats" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Editpage">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:text="EDIT YOUR DETAILS"
+        android:textAlignment="center"
+        android:textColor="#c50763"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        ></TextView>
+
+    <android.widget.Button
+        android:id="@+id/editbutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/labelbackground"
+        android:text="Edit"
+        android:textColor="#da5f07"
+        android:textSize="23dp"
+        android:textStyle="bold"
+
+        ></android.widget.Button>
+
+
+
+
+</RelativeLayout>

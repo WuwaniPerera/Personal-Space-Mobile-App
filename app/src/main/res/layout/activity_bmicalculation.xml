@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bmicalculation">
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="433dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="-180dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contentlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:src="@drawable/right">
+
+    </ImageView>
+
+    <RelativeLayout
+
+        android:id="@+id/contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cardbackground"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="BMI "
+            android:textColor="#1d1128"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/bmidisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmi"
+            android:layout_marginLeft="115dp"
+            android:text="18.5-24.9"
+            android:textAlignment="center"
+            android:textColor="#1d1128"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+
+        <TextView
+            android:id="@+id/bmicategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmidisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Normal Weight"
+            android:textColor="#1d1128"
+            android:textSize="28sp"
+
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bmilayout"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/contentlayout"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bmibackground">
+
+
+        <TextView
+            android:id="@+id/bmivalue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:text="BMI => "
+            android:textColor="#c50763"
+            android:textSize="40dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="23.9"
+            android:textColor="#c50763"
+            android:textSize="40dp"
+            android:textStyle="bold"
+
+
+            ></TextView>
+
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/recheck"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Recheck your BMI"
+        android:textColor="#da5f07"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        ></android.widget.Button>
+
+
+
+
+
+</RelativeLayout>

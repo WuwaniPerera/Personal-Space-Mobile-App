@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".detailspage">
+
+
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        ></ListView>
+
+
+<!--    <TableLayout-->
+<!--        android:id="@+id/table"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:background="@color/white"-->
+<!--        >-->
+
+
+<!--        <TableRow android:background="#006666">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/col1"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="17sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/col2"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="17sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/col3"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="17sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/col4"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginRight="20dp"/>-->
+
+<!--        </TableRow>-->
+
+<!--         <TableRow>-->
+
+<!--             <TextView-->
+<!--                 android:layout_width="2dp"-->
+<!--                 android:layout_height="match_parent"-->
+<!--                 android:layout_weight="4"-->
+<!--                 android:gravity="center_horizontal"-->
+<!--                 android:padding="10sp"-->
+<!--                 android:text="@string/d1"-->
+<!--                 android:textColor="@color/black"-->
+<!--                 android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/h1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/w1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:text="@string/bmi1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+
+<!--             <Button-->
+<!--                 android:id="@+id/b1"-->
+<!--                 android:layout_width="25dp"-->
+<!--                 android:layout_height="30dp"-->
+<!--                 android:layout_marginTop="10dp"-->
+<!--                 android:layout_marginRight="10dp"-->
+<!--                 android:background="@drawable/option3"-->
+<!--                 android:backgroundTint="#0000ffff"-->
+<!--                 android:onClick="ShowPopupItems">-->
+
+<!--             </Button>-->
+
+<!--         </TableRow>-->
+<!--    </TableLayout>-->
+
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/backbutton"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:background="@drawable/labelbackground"-->
+<!--        android:text="Back"-->
+<!--        android:textColor="#da5f07"-->
+<!--        android:textSize="23dp"-->
+<!--        android:textStyle="bold"-->
+
+<!--        ></android.widget.Button>-->
+
+
+
+
+</RelativeLayout>

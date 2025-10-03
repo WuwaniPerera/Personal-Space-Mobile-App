@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntriesMoods">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="778dp"
+        android:background="#ffff"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_mood_entries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@string/txt_mood_entries"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ScrollView
+                android:layout_width="348dp"
+                android:layout_height="663dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/theme_orange"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/wondweful_b"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <Button
+                            android:id="@+id/btnSeeMore"
+                            android:layout_width="20px"
+                            android:layout_height="70px"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/popup_menu"
+                            android:onClick="ShowPopUpMenu" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Wonderful"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="10dp"
+                            android:text="14-08-2022"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/theme_pink"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="16dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/popup_menu" />
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/happy_b" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Happy"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="10dp"
+                            android:text="13-08-2022"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/theme_purple"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="16dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/popup_menu" />
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/awful_b" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Awful"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="10dp"
+                            android:text="12-08-2022"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/theme_teal"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="16dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/popup_menu" />
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/sad_b" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Sad"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="10dp"
+                            android:text="11-08-2022"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/theme_purple"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="16dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/popup_menu" />
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/wondweful_b" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Wonderful"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="10dp"
+                            android:text="10-08-2022"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/theme_teal"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="16dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/popup_menu" />
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/neutral_b" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Neutral"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="10dp"
+                            android:text="09-08-2022"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="393dp"
+        android:layout_height="62dp"
+        android:background="@color/theme_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgEntries"
+            android:layout_width="49dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_list" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/btmNav_entries"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgEntries" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="33dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@+id/imgEntries"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@+id/imgHome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/imgStats"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toEndOf="@+id/imgAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bar_chart" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:text="@string/btmNav_home"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imgHome" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/btmNav_add"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:text="@string/btmNav_stats"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imgAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imgStats" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
